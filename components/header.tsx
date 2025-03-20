@@ -1,7 +1,6 @@
 import Link from "next/link"
 import { Menu } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import MobileNav from "@/components/mobile-nav"
 
 export default function Header() {
   return (
