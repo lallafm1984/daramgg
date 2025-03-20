@@ -6,9 +6,9 @@ import MobileNav from "@/components/mobile-nav"
 export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className=" flex h-16 items-center justify-around">
+      <div className=" flex h-16 items-center justify-between md:justify-around">
         <div className="flex items-center gap-2">
-          <MobileNav />
+          
           <Link href="/" className="flex items-center gap-2">
             <p className="text-2xl font-bold ml-4 text-[#ffe200] drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">다람.쥐쥐</p>
           </Link>
@@ -30,7 +30,7 @@ export default function Header() {
             About
           </Link>
         </nav>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center mr-4 gap-4">
  
           <Button variant="default" className="hidden sm:flex bg-[#E31E24] hover:bg-[#E31E24]/90">
             Sign In
