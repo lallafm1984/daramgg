@@ -22,15 +22,15 @@ const RankingBoard: React.FC<RankingBoardProps> = ({ category = "all" }) => {
       <div className="rounded-md border border-black bg-white/80">
         <table className="w-full">
           <thead>
-            <tr className="border-b bg-muted/50">
-              <th className="h-10 px-4 text-left align-middle font-medium">Rank</th>
-              <th className="h-10 px-4 text-left align-middle font-medium">Name</th>
-              <th className="h-10 px-4 text-left align-middle font-medium">Score</th>
+            <tr className="border-b border-black bg-muted/50">
+              <th className="h-10 px-4 text-left text-black align-middle font-medium">Rank</th>
+              <th className="h-10 px-4 text-left text-black align-middle font-medium">Name</th>
+              <th className="h-10 px-4 text-left text-black align-middle font-medium">Score</th>
             </tr>
           </thead>
           <tbody>
             {filteredRankings.map((item) => (
-              <tr key={item.rank} className="border-b">
+              <tr key={item.rank} className="border-b border-black">
                 <td className="p-4 align-middle text-black">{item.rank}</td>
                 <td className="p-4 align-middle text-black">{item.name}</td>
                 <td className="p-4 align-middle text-black">{item.score}</td>
