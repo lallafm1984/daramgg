@@ -2,10 +2,7 @@ import Header from "@/components/header"
 import Footer from "@/components/footer"
 import HeroSection from "@/components/sections/hero-section"
 import RankingBoardSection from "@/components/sections/ranking-board-section"
-import NewArrivalsSection from "@/components/sections/new-arrivals-section"
 import CommunityHighlightsSection from "@/components/sections/community-highlights-section"
-import CTASection from "@/components/sections/cta-section"
-import DRGSection from "@/components/sections/drg-section"
 
 export default function Home() {
   return (

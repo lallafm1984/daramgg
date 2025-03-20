@@ -1,8 +1,7 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { Search, Menu, Calendar, Trophy, Users, ChevronRight } from "lucide-react"
-import { Input } from "@/components/ui/input"
+import { Calendar, Trophy } from "lucide-react"
 
 export default function HeroSection() {
   return (
