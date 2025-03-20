@@ -13,10 +13,10 @@ export default function RankingBoardSection() {
             <h2 className="text-4xl font-bold tracking-tight text-[#ffe200] drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">Rankings</h2>
             
           </div>
-          <div className="w-full mt-12 flex justify-center">
-           <div className="relative">
+          <div className="w-full mt-12 flex justify-center items-center">
+           <div className="relative w-full">
               <Search className="absolute left-2.5 top-2 h-6 w-4 text-muted-foreground" />
-              <Input type="search" placeholder="Search rankings..." className="w-[600px] pl-8 h-10 rounded-2xl bg-white/80" />
+              <Input type="search" placeholder="Search rankings..." className="w-[80%] sm:w-[50%]  pl-8 h-10 rounded-2xl bg-white/80" />
             </div>
           </div>
         </div>

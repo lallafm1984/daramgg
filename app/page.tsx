@@ -8,13 +8,10 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col items-center bg-[#36a785]">
       <Header />
-      <main className="flex-1">
+      <main className="flex-1 w-full max-w-[1440px] mx-auto px-4">
         <HeroSection />
         <RankingBoardSection />
-        {/* <NewArrivalsSection /> */}
         <CommunityHighlightsSection />
-        {/* <CTASection /> */}
-        {/* <DRGSection /> */}
       </main>
       <Footer />
     </div>

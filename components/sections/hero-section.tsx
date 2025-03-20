@@ -54,10 +54,10 @@ export default function HeroSection() {
       </div>
       <div className="container px-4 md:px-6 mt-8">
         <div className="flex items-center gap-3 mb-8">
-          <Trophy className="w-8 h-8 text-[#ffe200]" />
-          <p className="text-4xl font-bold text-[#ffe200] drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">Next Racing</p>
+          <Trophy className="w-6 h-6 md:w-8 md:h-8 text-[#ffe200]" />
+          <p className="text-2xl md:text-4xl font-bold text-[#ffe200] drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">Next Racing</p>
         </div>
-        <div className="mt-12 grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-7">
+        <div className="mt-8 md:mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-7 gap-3 md:gap-5">
           {[
             { date: "3월20일 19:30", class: "오리지널 클래스", color: "#36a685" },
             { date: "3월21일 19:30", class: "비기너 클래스", color: "#0066B3" },
@@ -67,13 +67,13 @@ export default function HeroSection() {
             { date: "3월25일 19:30", class: "오리지널 클래스", color: "#36a685" },
             { date: "3월26일 19:30", class: "비기너 클래스", color: "#0066B3" },
           ].map((race, index) => (
-            <div key={index} className="group relative overflow-hidden rounded-xl border bg-background p-4 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col items-center justify-center gap-3 backdrop-blur-sm bg-white/80">
+            <div key={index} className="group relative overflow-hidden rounded-xl border bg-background p-3 md:p-4 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col items-center justify-center gap-2 md:gap-3 backdrop-blur-sm bg-white/80">
               <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <Calendar className="w-5 h-5 text-muted-foreground" />
-              <div className="text-sm font-medium text-muted-foreground">{race.date}</div>
+              <Calendar className="w-4 h-4 md:w-5 md:h-5 text-muted-foreground" />
+              <div className="text-xs md:text-sm font-medium text-muted-foreground">{race.date}</div>
               <Badge
                 variant="outline"
-                className={`bg-[${race.color}]/10 text-[${race.color}] hover:bg-[${race.color}]/20 hover:text-[${race.color}] border-[${race.color}]/20`}
+                className={`bg-[${race.color}]/10 text-[${race.color}] hover:bg-[${race.color}]/20 hover:text-[${race.color}] border-[${race.color}]/20 text-xs md:text-sm`}
               >
                 {race.class}
               </Badge>
