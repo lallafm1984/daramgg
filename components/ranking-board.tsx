@@ -19,7 +19,7 @@ const RankingBoard: React.FC<RankingBoardProps> = ({ category = "all" }) => {
 
   return (
     <div className="w-full ">
-      <div className="rounded-md border bg-white/80">
+      <div className="rounded-md border border-black bg-white/80">
         <table className="w-full">
           <thead>
             <tr className="border-b bg-muted/50">
@@ -31,9 +31,9 @@ const RankingBoard: React.FC<RankingBoardProps> = ({ category = "all" }) => {
           <tbody>
             {filteredRankings.map((item) => (
               <tr key={item.rank} className="border-b">
-                <td className="p-4 align-middle">{item.rank}</td>
-                <td className="p-4 align-middle">{item.name}</td>
-                <td className="p-4 align-middle">{item.score}</td>
+                <td className="p-4 align-middle text-black">{item.rank}</td>
+                <td className="p-4 align-middle text-black">{item.name}</td>
+                <td className="p-4 align-middle text-black">{item.score}</td>
               </tr>
             ))}
           </tbody>

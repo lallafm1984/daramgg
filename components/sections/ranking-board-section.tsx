@@ -15,7 +15,7 @@ export default function RankingBoardSection() {
           </div>
           <div className="w-full mt-12 flex justify-center items-center">
            <div className="relative w-full">
-              <Search className="absolute left-2.5 top-2 h-6 w-4 text-muted-foreground" />
+              <Search className="absolute left-2.5 top-2 h-6 w-4 text-black text-muted-foreground" />
               <Input type="search" placeholder="Search rankings..." className="w-[80%] sm:w-[50%]  pl-8 h-10 rounded-2xl bg-white/80" />
             </div>
           </div>

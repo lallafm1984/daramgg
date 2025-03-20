@@ -69,7 +69,7 @@ export default function HeroSection() {
           ].map((race, index) => (
             <div key={index} className="group relative overflow-hidden rounded-xl border  p-3 md:p-4 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col items-center justify-center gap-2 md:gap-3 backdrop-blur-sm bg-white/80">
               <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <Calendar className="w-4 h-4 md:w-5 md:h-5 " />
+              <Calendar className="w-4 h-4 md:w-5 md:h-5 text-blue-500" />
               <div className="text-xs md:text-sm font-medium  text-black">{race.date}</div>
               <Badge
                 variant="outline"
