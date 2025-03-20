@@ -59,21 +59,26 @@ export default function HeroSection() {
         </div>
         <div className="mt-8 md:mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-7 gap-3 md:gap-5">
           {[
-            { date: "3월20일 19:30", class: "오리지널 클래스", color: "#36a685" },
-            { date: "3월21일 19:30", class: "비기너 클래스", color: "#0066B3" },
-            { date: "3월22일 19:30", class: "어드밴스드 클래스", color: "#E31E24" },
-            { date: "3월23일 19:30", class: "스톡클래스", color: "#FF3100" },
-            { date: "3월24일 19:30", class: "오픈클래스", color: "#FF5100" },
-            { date: "3월25일 19:30", class: "오리지널 클래스", color: "#36a685" },
-            { date: "3월26일 19:30", class: "비기너 클래스", color: "#0066B3" },
+            { date: "3월20일 19:30", class: "오리지널 클래스", color: "#FF0700" },
+            { date: "3월21일 19:30", class: "비기너 클래스", color: "#FF6B6B" },
+            { date: "3월22일 19:30", class: "어드밴스드 클래스", color: "#4A90E2" },
+            { date: "3월23일 19:30", class: "스톡클래스", color: "#FFA500" },
+            { date: "3월24일 19:30", class: "오픈클래스", color: "#9B59B6" },
+            { date: "3월25일 19:30", class: "오리지널 클래스", color: "#FFD700" },
+            { date: "3월26일 19:30", class: "비기너 클래스", color: "#FF6B6B" },
           ].map((race, index) => (
-            <div key={index} className="group relative overflow-hidden rounded-xl border bg-background p-3 md:p-4 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col items-center justify-center gap-2 md:gap-3 backdrop-blur-sm bg-white/80">
+            <div key={index} className="group relative overflow-hidden rounded-xl border  p-3 md:p-4 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col items-center justify-center gap-2 md:gap-3 backdrop-blur-sm bg-white/80">
               <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <Calendar className="w-4 h-4 md:w-5 md:h-5 text-muted-foreground" />
-              <div className="text-xs md:text-sm font-medium text-muted-foreground">{race.date}</div>
+              <Calendar className="w-4 h-4 md:w-5 md:h-5 " />
+              <div className="text-xs md:text-sm font-medium ">{race.date}</div>
               <Badge
                 variant="outline"
-                className={`bg-[${race.color}]/10 text-[${race.color}] hover:bg-[${race.color}]/20 hover:text-[${race.color}] border-[${race.color}]/20 text-xs md:text-sm`}
+                style={{
+                  backgroundColor: `${race.color}10`,
+                  color: race.color,
+                  borderColor: `${race.color}20`,
+                }}
+                className="text-xs md:text-sm hover:opacity-80 transition-opacity"
               >
                 {race.class}
               </Badge>
