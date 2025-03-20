@@ -70,6 +70,9 @@ export default function RankingBoardSection() {
           <TabsContent value="obstacle" className="mt-6">
             <RankingBoard category="obstacle" />
           </TabsContent>
+          <TabsContent value="obstacle2" className="mt-6">
+            <RankingBoard category="obstacle2" />
+          </TabsContent>
         </Tabs>
       </div>
     </section>
