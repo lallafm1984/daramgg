@@ -7,10 +7,12 @@ import { useSession, signOut } from "next-auth/react"
 import Image from "next/image"
 import { useState } from "react"
 import LogoutDialog from "./logout-dialog"
+import MobileMenu from "./mobile-menu"
 
 export default function Header() {
   const { data: session } = useSession()
   const [showLogoutDialog, setShowLogoutDialog] = useState(false)
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   const handleLogout = () => {
     signOut({ callbackUrl: "/" })
@@ -77,7 +79,12 @@ export default function Header() {
               </Link>
             )}
  
-            <Button variant="outline" size="icon" className="md:hidden">
+            <Button 
+              variant="outline" 
+              size="icon" 
+              className="md:hidden"
+              onClick={() => setIsMobileMenuOpen(true)}
+            >
               <Menu className="h-4 w-4" />
               <span className="sr-only">Menu</span>
             </Button>
@@ -88,6 +95,10 @@ export default function Header() {
         isOpen={showLogoutDialog}
         onClose={() => setShowLogoutDialog(false)}
         onConfirm={handleLogout}
+      />
+      <MobileMenu
+        isOpen={isMobileMenuOpen}
+        onClose={() => setIsMobileMenuOpen(false)}
       />
     </>
   )
