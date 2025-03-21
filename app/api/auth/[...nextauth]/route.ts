@@ -24,11 +24,11 @@ const handler = NextAuth({
     error: "/login",
   },
   callbacks: {
-    async redirect({ url, baseUrl }) {
+    async redirect({ baseUrl }) {
       // 로그인 성공 후 /auth/callback으로 리다이렉트
       return `${baseUrl}/auth/callback`
     },
-    async session({ session, token }) {
+    async session({ session }) {
       return session
     },
     async jwt({ token, user, account }) {
