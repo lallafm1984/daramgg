@@ -58,14 +58,14 @@ export default function Header() {
                       sizes="32px"
                     />
                   </div>
-                  <span className="text-sm font-medium hidden sm:inline">
+                  <span className="text-sm font-medium">
                     {session.user?.name}
                   </span>
                 </div>
                 <Button
                   variant="ghost"
                   size="icon"
-                  className="hover:bg-red-100 hover:text-red-600"
+                  className="hidden md:flex hover:bg-red-100 hover:text-red-600"
                   onClick={() => setShowLogoutDialog(true)}
                 >
                   <LogOut className="h-5 w-5" />
