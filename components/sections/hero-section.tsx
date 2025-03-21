@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { Calendar, Trophy } from "lucide-react"
+import { Ticket, Calendar } from "lucide-react"
 
 export default function HeroSection() {
   return (
@@ -53,9 +53,9 @@ export default function HeroSection() {
         </div>
       </div>
       <div className="container px-4 md:px-6 mt-8">
-        <div className="flex items-center gap-3 mb-8">
-          <Trophy className="w-6 h-6 md:w-8 md:h-8 text-[#ffe200]" />
-          <p className="text-2xl md:text-4xl font-bold text-[#ffe200] drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">Next Racing</p>
+        <div className="flex items-center justify-center gap-3 mb-8">
+          <Ticket className="w-6 h-6 md:w-8 md:h-8 text-[#ffe200]" />
+          <p className="text-4xl font-bold text-[#ffe200] drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">Next Racing</p>
         </div>
         <div className="mt-8 md:mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-7 gap-3 md:gap-5">
           {[

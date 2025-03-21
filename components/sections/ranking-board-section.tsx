@@ -1,23 +1,27 @@
-import { Search } from "lucide-react"
+import { Search , Trophy} from "lucide-react"
 import { Input } from "@/components/ui/input"
+import { Button } from "@/components/ui/button"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import RankingBoard from "@/components/ranking-board"
 
+
 export default function RankingBoardSection() {
   return (
-    <section className="py-12 md:py-32">
+    <section className="py-32 md:py-32">
       
       <div className="container px-4 md:px-6">
-        <div className="flex flex-col gap-4 md:items-start md:justify-between">
-          <div>
+        <div className="flex flex-col gap-4 items-center justify-between">
+          <div className="flex items-center gap-3">
+           <Trophy className="w-6 h-6 md:w-8 md:h-8 text-[#ffe200]" />
             <h2 className="text-4xl font-bold tracking-tight text-[#ffe200] drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">Rankings</h2>
             
           </div>
-          <div className="w-full mt-12 flex justify-center items-center">
-           <div className="relative w-full">
+          <div className="w-full mt-8 flex justify-center items-center">
+           <div className="relative w-[50%]">
               <Search className="absolute left-2.5 top-2 h-6 w-4 text-black text-muted-foreground" />
-              <Input type="search" placeholder="Search rankings..." className="w-[80%] sm:w-[50%]  pl-8 h-10 rounded-2xl bg-white/80" />
+              <Input type="search" placeholder="Search rankings..." className="w-full pl-8 h-10 rounded-2xl bg-white/80" />
             </div>
+            <Button className="bg-[#FFE100] ml-4 text-black hover:bg-[#FFE100]/90">검색</Button>
           </div>
         </div>
 
