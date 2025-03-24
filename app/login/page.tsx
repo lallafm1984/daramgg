@@ -31,7 +31,7 @@ export default function LoginPage() {
             onClick={() => signIn("kakao", { callbackUrl: "/" })}
             className="w-full flex items-center justify-center gap-2 bg-[#FEE500] text-black hover:bg-[#FEE500]/90"
           >
-            <img src="/kakaoicon.png" alt="Kakao" width={20} height={20} />
+            <img src="/kakaoIcon.png" alt="Kakao" width={20} height={20} />
             카카오로 계속하기
           </Button>
           
@@ -39,7 +39,7 @@ export default function LoginPage() {
             onClick={() => signIn("naver", { callbackUrl: "/" })}
             className="w-full flex items-center justify-center gap-2 bg-[#00bf18] text-white hover:bg-[#00bf18]/90"
           >
-            <img src="/navericon.png" alt="Naver" width={30} height={30} />
+            <img src="/naverIcon.png" alt="Naver" width={30} height={30} />
             네이버로 계속하기
           </Button>
           
