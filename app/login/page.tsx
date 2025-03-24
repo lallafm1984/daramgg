@@ -2,10 +2,20 @@
 
 import { signIn } from "next-auth/react"
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 import Link from "next/link"
 import { ArrowLeft } from "lucide-react"
+import { useEffect, useState } from "react"
 
 export default function LoginPage() {
+  const [isKakaoInApp, setIsKakaoInApp] = useState(false)
+
+  useEffect(() => {
+    // 카카오 인앱 브라우저 감지
+    const isKakaoInAppBrowser = /KAKAOTALK/i.test(navigator.userAgent)
+    setIsKakaoInApp(isKakaoInAppBrowser)
+  }, [])
+
   return (
     <div className="min-h-screen bg-[#36a785] flex flex-col items-center justify-center p-4">
       <Link href="/" className="absolute top-4 left-4 text-white hover:text-[#ffe200] transition-colors">
@@ -22,7 +32,7 @@ export default function LoginPage() {
             onClick={() => signIn("kakao", { callbackUrl: "/" })}
             className="w-full flex items-center justify-center gap-2 bg-[#FEE500] text-black hover:bg-[#FEE500]/90"
           >
-            <img src="/kakaoIcon.png" alt="Kakao" width={20} height={20} />
+            <img src="/kakaoicon.png" alt="Kakao" width={20} height={20} />
             카카오로 계속하기
           </Button>
           
@@ -30,17 +40,19 @@ export default function LoginPage() {
             onClick={() => signIn("naver", { callbackUrl: "/" })}
             className="w-full flex items-center justify-center gap-2 bg-[#00bf18] text-white hover:bg-[#00bf18]/90"
           >
-            <img src="/naverIcon.png" alt="Naver" width={30} height={30} />
+            <img src="/navericon.png" alt="Naver" width={30} height={30} />
             네이버로 계속하기
           </Button>
           
-          <Button
-            onClick={() => signIn("google", { callbackUrl: "/" })}
-            className="w-full flex items-center justify-center gap-2 bg-white text-gray-700 border hover:bg-gray-50"
-          >
-            <img src="/googleIcon.png" alt="Google" width={20} height={20} />
-            구글로 계속하기
-          </Button>
+          {!isKakaoInApp && (
+            <Button
+              onClick={() => signIn("google", { callbackUrl: "/" })}
+              className="w-full flex items-center justify-center gap-2 bg-white text-gray-700 border hover:bg-gray-50"
+            >
+              <img src="/googleIcon.png" alt="Google" width={20} height={20} />
+              구글로 계속하기
+            </Button>
+          )}
         </div>
 
         <div className="pt-4">
