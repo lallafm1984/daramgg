@@ -28,21 +28,21 @@ export default function Header() {
               <p className="text-2xl font-bold ml-4 text-[#ffe200] drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">다람.쥐쥐</p>
             </Link>
           </div>
-          <nav className="hidden md:flex items-center gap-6">
-            <Link href="#" className="text-sm font-medium hover:text-[#1E9B7B]">
-              Home
+          <nav className="hidden md:flex items-center gap-8">
+            <Link href="/" className="text-sm font-bold text-[#2b6ead] hover:text-[#2b6ead]/80 transition-colors duration-200">
+              다람쥐과학
             </Link>
-            <Link href="#" className="text-sm font-medium hover:text-[#1E9B7B]">
-              Rankings
+            <Link href="/schedule" className="text-sm font-bold text-[#2b6ead] hover:text-[#2b6ead]/80 transition-colors duration-200">
+              일정
             </Link>
-            <Link href="#" className="text-sm font-medium hover:text-[#1E9B7B]">
-              Shop
+            <Link href="/ranking" className="text-sm font-bold text-[#2b6ead] hover:text-[#2b6ead]/80 transition-colors duration-200">
+              랭킹
             </Link>
-            <Link href="#" className="text-sm font-medium hover:text-[#1E9B7B]">
-              Community
+            <Link href="/community" className="text-sm font-bold text-[#2b6ead] hover:text-[#2b6ead]/80 transition-colors duration-200">
+              커뮤니티
             </Link>
-            <Link href="#" className="text-sm font-medium hover:text-[#1E9B7B]">
-              About
+            <Link href="/gallery" className="text-sm font-bold text-[#2b6ead] hover:text-[#2b6ead]/80 transition-colors duration-200">
+              갤러리
             </Link>
           </nav>
           <div className="flex items-center mr-4 gap-4">

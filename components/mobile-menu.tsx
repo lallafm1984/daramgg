@@ -42,39 +42,39 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
           <nav className="flex-1 px-6 py-8">
             <div className="space-y-6">
               <Link
-                href="#"
-                className="block py-3 text-xl font-medium text-white hover:text-[#ffe200] transition-colors duration-200 border-b border-[#2d8a6b]"
+                href="/"
+                className="block py-3 text-xl font-bold text-white hover:text-[#2b6ead] transition-colors duration-200 border-b border-[#2d8a6b] hover:bg-white/5"
                 onClick={onClose}
               >
-                Home
+                다람쥐과학
               </Link>
               <Link
-                href="#"
-                className="block py-3 text-xl font-medium text-white hover:text-[#ffe200] transition-colors duration-200 border-b border-[#2d8a6b]"
+                href="/schedule"
+                className="block py-3 text-xl font-bold text-white hover:text-[#2b6ead] transition-colors duration-200 border-b border-[#2d8a6b] hover:bg-white/5"
                 onClick={onClose}
               >
-                Rankings
+                일정
               </Link>
               <Link
-                href="#"
-                className="block py-3 text-xl font-medium text-white hover:text-[#ffe200] transition-colors duration-200 border-b border-[#2d8a6b]"
+                href="/ranking"
+                className="block py-3 text-xl font-bold text-white hover:text-[#2b6ead] transition-colors duration-200 border-b border-[#2d8a6b] hover:bg-white/5"
                 onClick={onClose}
               >
-                Shop
+                랭킹
               </Link>
               <Link
-                href="#"
-                className="block py-3 text-xl font-medium text-white hover:text-[#ffe200] transition-colors duration-200 border-b border-[#2d8a6b]"
+                href="/community"
+                className="block py-3 text-xl font-bold text-white hover:text-[#2b6ead] transition-colors duration-200 border-b border-[#2d8a6b] hover:bg-white/5"
                 onClick={onClose}
               >
-                Community
+                커뮤니티
               </Link>
               <Link
-                href="#"
-                className="block py-3 text-xl font-medium text-white hover:text-[#ffe200] transition-colors duration-200 border-b border-[#2d8a6b]"
+                href="/gallery"
+                className="block py-3 text-xl font-bold text-white hover:text-[#2b6ead] transition-colors duration-200 border-b border-[#2d8a6b] hover:bg-white/5"
                 onClick={onClose}
               >
-                About
+                갤러리
               </Link>
             </div>
           </nav>

@@ -43,11 +43,8 @@ export default function HeroSection() {
 
             <div className="flex flex-wrap justify-center gap-4 mt-4">
               <Button className="bg-[#FFE100] text-black hover:bg-[#FFE100]/90">
-                레이스 일정 보기
+                다람쥐 과학 둘러보기
               </Button>
-              {/* <Button variant="outline" className="border-white text-white hover:bg-white hover:text-[#36a685]">
-                참가 신청하기
-              </Button> */}
             </div>
           </div>
         </div>
@@ -85,6 +82,13 @@ export default function HeroSection() {
             </div>
           ))}
         </div>
+        <div className="flex flex-wrap justify-center gap-4 mt-12">
+              <Button className="bg-[#FFE100] text-black hover:bg-[#FFE100]/90" asChild>
+                <a href="/schedule">
+                  대회 일정 보기
+                </a>
+              </Button>
+            </div>
       </div>
     </section>
   )
