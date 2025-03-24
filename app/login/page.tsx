@@ -28,9 +28,9 @@ export default function LoginPage() {
           
           <Button
             onClick={() => signIn("naver", { callbackUrl: "/auth/callback" })}
-            className="w-full flex items-center justify-center gap-2 bg-[#03C75A] text-white hover:bg-[#03C75A]/90"
+            className="w-full flex items-center justify-center gap-2 bg-[#00bf18] text-white hover:bg-[#00bf18]/90"
           >
-            <Image src="/naver-logo.png" alt="Naver" width={20} height={20} />
+            <Image src="/navericon.png" alt="Naver" width={30} height={30} />
             네이버로 계속하기
           </Button>
           
@@ -38,7 +38,7 @@ export default function LoginPage() {
             onClick={() => signIn("google", { callbackUrl: "/auth/callback" })}
             className="w-full flex items-center justify-center gap-2 bg-white text-gray-700 border hover:bg-gray-50"
           >
-            <Image src="/google-logo.png" alt="Google" width={20} height={20} />
+            <Image src="/googleIcon.png" alt="Google" width={20} height={20} />
             구글로 계속하기
           </Button>
 
@@ -46,7 +46,7 @@ export default function LoginPage() {
             <Link href="/" className="w-full">
               <Button
                 variant="outline"
-                className="w-full flex items-center justify-center gap-2 text-gray-600 hover:text-gray-900"
+                className="w-full flex items-center justify-center gap-2 text-black hover:text-gray-900"
               >
                 <ArrowLeft className="h-4 w-4" />
                 돌아가기
