@@ -1,6 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
+    domains: [
+      'k.kakaocdn.net',
+      'ssl.pstatic.net',
+      'lh3.googleusercontent.com',
+      'phinf.pstatic.net',
+    ],
     remotePatterns: [
       {
         protocol: 'https',
