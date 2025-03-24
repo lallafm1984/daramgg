@@ -3,6 +3,7 @@
 import { signIn } from "next-auth/react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import Image from "next/image"
 import { ArrowLeft } from "lucide-react"
 import { useEffect, useState } from "react"
 
@@ -31,7 +32,7 @@ export default function LoginPage() {
             onClick={() => signIn("kakao", { callbackUrl: "/" })}
             className="w-full flex items-center justify-center gap-2 bg-[#FEE500] text-black hover:bg-[#FEE500]/90"
           >
-            <img src="/kakaoIcon.png" alt="Kakao" width={20} height={20} />
+            <Image src="/kakaoIcon.png" alt="Kakao" width={20} height={20} />
             카카오로 계속하기
           </Button>
           
@@ -39,7 +40,7 @@ export default function LoginPage() {
             onClick={() => signIn("naver", { callbackUrl: "/" })}
             className="w-full flex items-center justify-center gap-2 bg-[#00bf18] text-white hover:bg-[#00bf18]/90"
           >
-            <img src="/naverIcon.png" alt="Naver" width={30} height={30} />
+            <Image src="/naverIcon.png" alt="Naver" width={30} height={30} />
             네이버로 계속하기
           </Button>
           
@@ -48,7 +49,7 @@ export default function LoginPage() {
               onClick={() => signIn("google", { callbackUrl: "/" })}
               className="w-full flex items-center justify-center gap-2 bg-white text-gray-700 border hover:bg-gray-50"
             >
-              <img src="/googleIcon.png" alt="Google" width={20} height={20} />
+              <Image src="/googleIcon.png" alt="Google" width={20} height={20} />
               구글로 계속하기
             </Button>
           )}
