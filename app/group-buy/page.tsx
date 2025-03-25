@@ -1,16 +1,8 @@
-"use client"
 
-import { useState } from "react"
 import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs"
-import Header from "@/components/header"
 import Footer from "@/components/footer"
 
-type SizeOption = {
-  category: string
-  sizes: string[]
-}
+ 
 
 const colorOptions = [
   { id: 1, color: "검정", logo: "흰색" },
@@ -37,10 +29,7 @@ const sizeInfo = [
 ]
 
 export default function GroupBuyPage() {
-  const [selectedColor, setSelectedColor] = useState(1)
-  const [selectedSize, setSelectedSize] = useState("")
-  const [showSizeGuide, setShowSizeGuide] = useState(false)
-
+ 
   return (
     <div className="min-h-screen bg-gray-50">
       {/* <Header /> */}
