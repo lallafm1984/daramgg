@@ -31,11 +31,11 @@ const sizeInfo = [
 export default function GroupBuyPage() {
  
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-[#36a785]">
       {/* <Header /> */}
       <main className="container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl font-bold text-center mb-8 text-[#2b6ead]">다람쥐과학 1차 굿즈</h1>
+          <h1 className="text-4xl font-bold text-center mb-8 text-[#ffe200] drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">다람쥐과학 1차 굿즈</h1>
           
           {/* 상품 이미지 */}
           <div className="relative aspect-square rounded-xl overflow-hidden bg-white shadow-lg mb-12">
@@ -58,8 +58,8 @@ export default function GroupBuyPage() {
                   className="p-4 rounded-lg border-2 border-[#2b6ead]/20 hover:border-[#2b6ead]/40 transition-colors"
                 >
                   <div className="flex flex-col gap-1">
-                    <p className="text-md text-md font-semibold">{option.color}</p>
-                    <p className="text-md text-md font-semibold">로고: {option.logo}</p>
+                    <p className="text-md text-md text-black font-semibold">{option.color} </p>
+                    <p className="text-md text-md text-black font-semibold">로고: {option.logo}</p>
                   </div>
                 </div>
               ))}
@@ -72,7 +72,7 @@ export default function GroupBuyPage() {
             <div className="space-y-6">
               {sizeInfo.map((info) => (
                 <div key={info.category} className="border-b border-gray-200 pb-4 last:border-0 last:pb-0">
-                  <h3 className="text-xl font-semibold mb-3">{info.category}</h3>
+                  <h3 className="text-xl font-semibold mb-3 text-black">{info.category}</h3>
                   <div className="flex flex-wrap gap-3">
                     {info.sizes.map((size) => (
                       <div
@@ -109,14 +109,14 @@ export default function GroupBuyPage() {
         <div className="space-y-2">
           <div className="border-b pb-1">
             <h3 className="text-lg font-bold text-[#2b6ead] mb-[2px]">공동구매 가격</h3>
-            <p className="text-2xl font-bold">29,000원</p>
+            <p className="text-2xl text-black font-bold">29,000원</p>
           </div>
           <div>
             <h3 className="text-lg font-bold text-[#2b6ead] mb-[2px]">입금계좌</h3>
             <div className="space-y-0">
-              <p className="font-medium">카카오뱅크</p>
-              <p className="font-bold text-xl">3333-04-3273706</p>
-              <p className="text-gray-600">조형진</p>
+              <p className="font-medium text-black">카카오뱅크</p>
+              <p className="font-bold text-xl text-black">3333-04-3273706</p>
+              <p className="text-black">조형진</p>
             </div>
           </div>
         </div>
